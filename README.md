@@ -17,9 +17,9 @@ A MERN stack social media which enables artists and creative people to share the
 ## Media
 
 <div display="flex">
-    <img src="./client/public/assets/login-demo.gif" width="240" height="140"/>
-    <img src="./client/public/assets/feed-demo.gif" width="240" height="140"/>
-    <img src="./client/public/assets/profile-demo.gif" width="240" height="140"/>
+    <img src="./client/public/assets/login-demo.gif" width="260" height="160"/>
+    <img src="./client/public/assets/feed-demo.gif" width="260" height="160"/>
+    <img src="./client/public/assets/profile-demo.gif" width="260" height="160"/>
 </div>
 
 
