@@ -1,0 +1,154 @@
+@import '../../../scss/config.scss';
+
+.form-container {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+        width: 350px;
+        height: 40px;
+        padding: 0.5rem 1rem;
+        font-size: 16px;
+        font-family: $font-primary;
+    }
+
+    label {
+        align-self: flex-start;
+        margin-bottom: -1rem;
+    }
+}
+
+.input-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-flex {
+    display: flex;
+    gap: 20px;
+}
+
+.field-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.img-input {
+    padding: 2rem;
+}
+
+.img-drop-field {
+    padding: 2rem;
+    width: 650px;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.login-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    all: unset;
+    background-color: $bg-button;
+    color: $typography-dark;
+    margin: 1.5rem 0 0.7rem 0;
+    padding: 0.5rem 3rem;
+    font-family: $font-secondary;
+    font-size: 18px;
+    
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.login-register-link {
+    all: unset;
+    text-decoration: none;
+    font-family: $font-primary;
+    font-size: 14px;
+}
+
+#light-theme {
+    .form-container {
+        
+        input {
+            color: $typography-light;
+            border: 1px solid $outline-light;
+        }
+    }
+
+    .img-input {
+        border: 1px solid $outline-light;
+    }
+
+    .img-drop-field {
+        border: 2px dashed $outline-light;
+    }
+
+    .btn:hover {
+        background-color: $bg-button-hover-dark;
+    }
+
+    .login-register-link {
+        color: $typography-light !important;
+
+        &:hover {
+            color: $bg-button !important;
+        }
+    }
+}
+
+#dark-theme {
+    .form-container {
+        
+        input {
+            color: $typography-dark;
+            background-color: $bg-input-dark;
+            border: 1px solid $outline-dark;
+
+            &::placeholder {
+                color: $typography-dark ;
+            }
+        }
+    }
+
+    .img-input {
+        border: 1px solid $outline-dark;
+    }
+
+    .img-drop-field {
+        border: 1px dashed $outline-dark;
+    }
+
+    .btn:hover {
+        background-color: $bg-button-hover-dark;
+    }
+
+    .login-register-link {
+        color: $typography-dark !important;
+
+        &:hover {
+            color: $bg-button-hover-dark !important;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        input {
+            width: 250px;
+            height: 35px;
+        }
+    }
+}

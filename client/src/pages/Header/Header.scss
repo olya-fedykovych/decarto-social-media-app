@@ -1,0 +1,156 @@
+@import '../../scss/config.scss';
+
+.header {
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    padding: 1rem 6%;
+    margin-top:0;
+}
+
+button {
+    all: unset;
+}
+
+.logo-container {
+    gap: 1.75rem;
+}
+
+.logo {
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.search-container {
+    gap: 0;
+    padding: 0.1rem 1.5rem;
+}
+
+.search-btn {
+    margin-left: -2rem;
+}
+
+.search-input {
+    width: 250px;
+    padding: 0.7rem 2rem;
+    font-size: 14px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.header-items-container {
+    gap: 2rem;
+
+    button {
+        all: unset;
+    }
+}
+
+.select-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 6rem;
+    pointer-events: none;
+
+    &:hover {
+        color: $bg-button;
+        cursor: pointer;
+    }
+}
+
+.menu-mobile {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    min-width: 300px;
+    max-width: 500px;
+    z-index: 10;
+    padding: 1rem;
+}
+
+.menu-mobile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.exit-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.fa-xl {
+
+    &:hover {
+        color: $bg-button;
+        cursor: pointer;
+    }
+}
+
+#light-theme {
+    .header {
+        background-color: $bg-header-light;
+    }
+
+    .search-input {
+        border: 1px solid $outline-light;
+
+        &::placeholder {
+            color: $outline-light;
+        }
+    }
+
+    .menu-mobile {
+        background-color: $bg-menu-light;
+    }
+}
+
+#dark-theme {
+    .header {
+        background-color: $bg-header-dark;
+    }
+
+    .search-input {
+        background-color: $bg-input-dark;
+        border: 1px solid $outline-dark;
+
+        &::placeholder {
+            color: $outline-dark;
+        }
+
+        &:hover {
+            background-color: $input-hover-dark;
+        }
+    }
+
+    .search-btn {
+        color: $outline-dark;
+    }
+
+    .menu-mobile {
+        background-color: $bg-menu-dark;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        height: 78px;
+    }
+
+    .logo {
+        top: 3px;
+    }
+}

@@ -1,0 +1,22 @@
+@import '../../scss/config.scss';
+
+.friend-container {
+    gap: 1rem;
+}
+
+.friend-name {
+    
+
+    &:hover {
+        color: $bg-button;
+        cursor: pointer;
+    }
+}
+
+.friend-subtitle {
+    font-size: 0.75rem;
+}
+
+.fa-sm {
+    margin-left: 1rem;
+}

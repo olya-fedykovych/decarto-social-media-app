@@ -1,0 +1,30 @@
+.home-page-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 8rem 6%;
+
+    .home-user-widget {
+        flex-basis: 26%;
+    }
+    
+    .home-ad-widget {
+        flex-basis: 26%;
+    }
+    
+    .home-posts-widget {
+        flex-basis: 42%;
+    }
+    
+    .home-friends-widget {
+        margin: 2rem 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .home-page-container {
+        display: block;
+    }
+}
+

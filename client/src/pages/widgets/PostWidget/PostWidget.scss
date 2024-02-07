@@ -1,0 +1,50 @@
+@import '../../../scss/config.scss';
+
+.post-container {
+    margin: 2rem 0;
+
+    button { 
+        all: unset;
+    }
+}
+
+.post-description {
+    margin-top: 1rem;
+}
+
+.post-img {
+    width: 100%;
+    height: auto;
+    margin-top: 0.75rem;
+}
+
+.reactions-row-container {
+    margin-top: 0.6rem;
+}
+
+.reactions-container {
+    gap: 1rem;
+}
+
+.likes-container,
+.comment-count-container {
+    gap: 0.3rem;
+}
+
+.comments-container {
+    margin-top: 0.5rem;
+}
+
+.comment-text {
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+}
+
+hr {
+    border: 0.1px solid #AC9E91;
+}
+
+.fa-lg:hover {
+    color: $bg-button;
+    cursor: pointer;
+}

@@ -1,0 +1,110 @@
+@import '../../../scss/config.scss';
+
+.user-widget {
+    hr {
+        margin: 0.5rem 0;
+    }
+    
+}
+
+.user-row-container {
+    gap: 0.5rem;
+    padding-bottom: 1.1rem;
+}
+
+.user-row {
+    gap: 1rem;
+}
+
+.user-name {
+    font-weight: 500;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.user-data-container,
+.user-views-container,
+.user-socials-container {
+    padding: 1rem 0;
+}
+
+.user-data-container {
+    
+    h5 {
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+}
+
+.user-location,
+.user-direction {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-location, 
+.portfolio-container {
+    margin-bottom: 1rem;
+}
+
+.user-views {
+    margin-bottom: 0.5rem;
+}
+
+.user-socials-container {
+    h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+
+    h5 {
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+
+    .link,
+    .edit {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.social-gap {
+    gap: 1rem;
+}
+
+
+#light-theme {
+        
+    hr {
+        border: 0.1px solid $outline-light;
+    }
+
+    .user-name,
+    .edit,
+    .link {
+        &:hover {
+            color: $bg-button;
+        }
+    }
+}
+
+#dark-theme {
+        
+    hr {
+        border: 0.1px solid $outline-dark;
+    }
+
+    .user-name,
+    .edit,
+    .link {
+        &:hover {
+            color: $bg-button-hover-dark;
+        }
+    }
+}

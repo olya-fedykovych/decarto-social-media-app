@@ -1,0 +1,25 @@
+@import '../../../scss/config.scss';
+
+.friend-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 1.2rem;
+
+    button {
+        all: unset;
+    }
+}
+
+.friend-btn:hover {
+    color: $bg-button;
+    cursor: pointer;
+}
+
+h5 {
+    margin-bottom: 1.5rem;
+}
+
+.friend-name {
+    margin-bottom: 0;
+}

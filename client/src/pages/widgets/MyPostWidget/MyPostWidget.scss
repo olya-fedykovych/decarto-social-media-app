@@ -1,0 +1,131 @@
+@import '../../../scss/config.scss';
+
+.user-input-container {
+    gap: 1.5rem;
+}
+
+.post-input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 16px;
+
+    &::placeholder {
+        color: $outline-light;
+    }
+}
+
+.drop-field-container {
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.drop-field {
+    padding: 1rem;
+    width: 100%;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.delete-img-btn {
+    all: unset;
+    width: 15%;
+    text-align: end;
+}
+
+hr {
+    margin: 1.25rem 0;
+}
+
+.attachment-btn-gap {
+    gap: 0.5rem;
+}
+
+.attachment-btn-gap:hover {
+    cursor: pointer;
+}
+
+
+#light-theme {
+        
+    .post-input {
+        color: $typography-light;
+        border: 1px solid $outline-light;
+        &::placeholder {
+            color: $outline-light;
+        }
+    }
+
+    .drop-field-container {
+        border: 1px solid $outline-light;
+    }
+
+    .drop-field {
+        border: 2px dashed $outline-light;
+    }
+
+
+    .drop-field:hover {
+        border: 2px dashed $bg-button;
+        color: $bg-button;
+    }
+
+    .attachment-btn-gap:hover {
+        color: $bg-button;
+    }
+}
+
+#dark-theme {
+        
+    .post-input {
+        background-color: $bg-input-dark;
+        color: $typography-dark;
+        border: 1px solid $outline-dark;
+        &::placeholder {
+            color: $outline-dark;
+        }
+    }
+
+    .drop-field-container {
+        border: 1px solid $outline-dark;
+    }
+
+    .drop-field {
+        border: 2px dashed $outline-dark;
+    }
+
+    .drop-field:hover {
+        border: 2px dashed $bg-button-hover-dark;
+        color: $bg-button-hover-dark;
+    }
+    
+    .attachment-btn-gap:hover {
+        color: $bg-button-hover-dark;
+    }
+
+}
+
+@media (min-width: 1000px) and (max-width: 1280px) {
+
+    .attachment-btn-gap {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .attachment-name {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .my-post-container {
+        margin-top: 2rem;
+    }
+
+    .post-input {
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+}
